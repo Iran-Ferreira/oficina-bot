@@ -87,3 +87,13 @@ Global API Key: SenhaOficina123 (pode ser alterada no docker-compose.yml)
     Expire (minutes): 10 ou 20 (tempo para reiniciar a sessão se o usuário parar de responder).
 
 ⚠️ Atenção: Não cole a URL completa do chatbot no campo de servidor (ex: https://typebot.co/meu-bot). A URL base da API deve ser estritamente https://viewer.typebot.io e o ID deve ser inserido separadamente no campo do Bot ID para evitar erros 503 Service Unavailable.
+
+
+Expor seu Localhost para a Internet (Para se conectar ao Typebot)
+Como a Evolution API está no seu computador (localhost), o Typebot.io (que roda na nuvem) precisa de uma URL pública para enviar e receber mensagens.
+
+Abra uma nova aba do seu terminal no e rode o localtunnel (ou ngrok):
+
+npx localtunnel --port 8080
+
+Importante: Guarde essa URL! É ela que você vai usar para configurar os Webhooks e as integrações da sua máquina com o Typebot.
