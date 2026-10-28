@@ -107,12 +107,27 @@ Acesse o link no seu navegador:
 ### 2. Conectar o seu WhatsApp (QR Code)
 1. No menu lateral esquerdo, clique em **Instances** (Instâncias).
 2. Localize a instância **Iran** (ou crie uma nova com seu nome).
+
+   Para criar uma instância, use o botão **Instance+** e preencha os dados solicitados:
+
+   ![Botão para adicionar uma instância](evolution_api/instance.png)
+
+   ![Formulário de criação de uma nova instância](evolution_api/instance2.png)
+
+   A instância criada aparece na lista do painel:
+
+   ![Instância no painel da Evolution API](evolution_api/perfil-teste.png)
+
 3. Clique no botão de **conectar** (ícone de QR Code ou botão de conexão).
 4. No seu celular, abra o **WhatsApp**:
    * Vá em **Configurações / Menu (três pontinhos)** > **Aparelhos conectados**.
    * Toque em **Conectar um aparelho**.
    * Aponte a câmera para o QR Code na tela do computador.
 5. Aguarde alguns segundos até o status mudar para **CONNECTED** (Conectado / Verde).
+
+   No painel da instância, solicite o QR Code para iniciar o pareamento:
+
+   ![Painel da instância com a opção para obter o QR Code](evolution_api/qrcode.png)
 
 ---
 
@@ -125,6 +140,22 @@ Acesse o link no seu navegador:
    * **Trigger Type:** `All` *(para responder a qualquer mensagem)*
    * **Expire in minutes:** `10`
 3. Role até o final e clique em **Save** (Salvar).
+
+   Acesse a lista de Typebots da instância para adicionar uma integração:
+
+   ![Lista de integrações Typebot](evolution_api/typeboot.png)
+
+   Ao clicar em **Typebot**, preencha as configurações iniciais:
+
+   ![Formulário para adicionar um Typebot](evolution_api/novo_typeboot.png)
+
+   Configure também os gatilhos:
+
+   ![Configurações de gatilho do Typebot](evolution_api/configuracoes.png)
+
+   E revise as configurações gerais:
+
+   ![Configurações gerais do Typebot](evolution_api/configuracoes2.png)
 
 ---
 
