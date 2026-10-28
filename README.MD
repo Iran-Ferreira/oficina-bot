@@ -88,12 +88,46 @@ Global API Key: SenhaOficina123 (pode ser alterada no docker-compose.yml)
 
 ⚠️ Atenção: Não cole a URL completa do chatbot no campo de servidor (ex: https://typebot.co/meu-bot). A URL base da API deve ser estritamente https://viewer.typebot.io e o ID deve ser inserido separadamente no campo do Bot ID para evitar erros 503 Service Unavailable.
 
+## 🚀 Guia Rápido de Teste (Para Convidados)
 
-Expor seu Localhost para a Internet (Para se conectar ao Typebot)
-Como a Evolution API está no seu computador (localhost), o Typebot.io (que roda na nuvem) precisa de uma URL pública para enviar e receber mensagens.
+Siga o passo a passo abaixo para conectar seu WhatsApp e ativar o chatbot de atendimento.
 
-Abra uma nova aba do seu terminal no e rode o localtunnel (ou ngrok):
+---
 
-npx localtunnel --port 8080
+### 1. Acessar o Painel de Gerenciamento
+Acesse o link no seu navegador:
+👉 **`https://evolution-api-oficina.onrender.com/manager`** *(ou a URL oficial do seu projeto)*
 
-Importante: Guarde essa URL! É ela que você vai usar para configurar os Webhooks e as integrações da sua máquina com o Typebot.
+> ⚠️ **Importante:** Caso a tela de login solicite a **Server URL**, informe:
+> `https://evolution-api-oficina.onrender.com` *(sempre com `https://`)*
+> E a **Global API Key**: `SenhaOficina123`
+
+---
+
+### 2. Conectar o seu WhatsApp (QR Code)
+1. No menu lateral esquerdo, clique em **Instances** (Instâncias).
+2. Localize a instância **Iran** (ou crie uma nova com seu nome).
+3. Clique no botão de **conectar** (ícone de QR Code ou botão de conexão).
+4. No seu celular, abra o **WhatsApp**:
+   * Vá em **Configurações / Menu (três pontinhos)** > **Aparelhos conectados**.
+   * Toque em **Conectar um aparelho**.
+   * Aponte a câmera para o QR Code na tela do computador.
+5. Aguarde alguns segundos até o status mudar para **CONNECTED** (Conectado / Verde).
+
+---
+
+### 3. Ativar o Fluxo do Typebot
+1. Ainda na tela de instâncias, clique na sua instância e vá para a aba **Typebot** (menu de integrações).
+2. Deixe os campos configurados exatamente assim:
+   * **Status / Enabled:** Ativado (ligado)
+   * **Typebot URL:** `https://viewer.typebot.io`
+   * **Typebot ID / Bot Name:** `restaurante-xpys0my`
+   * **Trigger Type:** `All` *(para responder a qualquer mensagem)*
+   * **Expire in minutes:** `10`
+3. Role até o final e clique em **Save** (Salvar).
+
+---
+
+### 4. Testar o Chatbot
+1. Pegue um **outro celular** (ou peça para alguém) e envie qualquer mensagem (ex: *"Oi"*, *"Olá"*) para o número do WhatsApp que você acabou de conectar.
+2. O bot responderá de forma automática em tempo real com o fluxo interativo do restaurante! 🍔🤖
